@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Jeanie Was Here But Not First</title>
+<title>Web 102</title>
 <link type="text/css" href="../css/bootstrap.css" rel="stylesheet">
 <script type="text/javascript" src="../javascript/bootstrap.js"></script>
 <script type="text/javascript" src="../javascript/iquery-1.11.0.js"></script>
@@ -10,27 +10,61 @@
 	<script src="../javascript/jquery-1.11.0.js"></script>
 	
 	<style type="text/css">
+	   html {
+	   		width=100%
+	   		height=100%
+	   }
+	   #container {
+	   		background-color: #CED5E4;
+	   		width: 960px;
+	   		margin-right: auto;
+	   		margin-left: auto;
+	   }
+	   #header {
+	   		height: 130px;
+	   		margin-right: auto;
+	   		margin-left: auto
+	   }
+	   #header #logo {
+	   		height: 121px;
+	   		width: 250px;
+	   		position: relative;
+	   		margin-left: 20px;
+	   		padding: 1% 0 0 0
+	   }
 	   body {
 	   		font-family: Arial,sans-serif;
 	   		padding: 5% 5% 5%;
 	  		font-color: #000;
 	   		background-color: #CED5E4;
-	        }
+	   }
        h1  {
        		text-align: center;
-       		}
-	   img {
-	   		display: block;
-	   		margin: 0 auto;
-	   		padding: 0 2% 2% 2%;
-	   		}
+       		font-color: #2e3092;
+       }
 	   p {
-	   		line-height:1.4em;
-	   		}
-	   		
-	   div.bird {
-	  		text-align: center;
-	  		}
+	   	    line-height:1.4em;
+	   		padding: 3px 0 0 3px;
+	   		text-align: center;
+	   }
+	   
+	 #heythere {
+	   		text-align:center;
+	   		margin-left: auto;
+	   		margin-right: auto;
+	   		padding: 0 0 10px 0;
+	   }		
+	   #bird {
+	  		width: 500px;
+	  		test-align: center;
+	  		margin-left:320px;
+	  		margin-right:auto;
+	  		padding: 10px 0 10px 0;
+	   }
+	   div.form-group {
+	   		text-align: center;
+	   }
+	  
 	</style>
 	
 	<script>
@@ -41,21 +75,29 @@
 
 </head>
 <body>
-	<h1>Almost Dread</h1>
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<img src="images/Web102_logo.jpg" width="250" height="121">
+			</div>
+		</div>
+	<h1>The Wonderful Web</h1>
 	
-	<p>There once was a class on the web,
-	   At first I thought...
-	   Good God,
-	   my career is dead,
-	   But within the browser of this web,
-	   Youtube tuts alleviated my dread,
-	   Now perhaps I have a clue,
-	   of what in the world,
-	   we were suppose to do!</p>
 	
-	<img src="images/HeyThere.jpg" alt="Cardinal Bird" />
 	
-	<div class="bird">
+	<div id="bird">
+		<p>There once was a class on the web,
+	   		At first I thought...
+	   		Good God,
+	   		my career is dead,
+	   		But within the browser of this web,
+	   		Youtube tuts alleviated my dread,
+	   		Now perhaps I have a clue,
+	   		of what in the world,
+	   		we were suppose to do!</p>
+		<div id="heythere">
+		<img src="images/HeyThere.jpg" alt="Cardinal Bird">
+		</div>
 		<p>Hey There!</p>
 	</div>
 	
@@ -85,6 +127,6 @@
             <div class="clearfix"></div>
         </div>
     </form>
-	
+   </div>
 </body>
 </html>
