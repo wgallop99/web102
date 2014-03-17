@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cloning Git - In THEORY</title>
+</head>
+<body>
+
+<h2>Steps to Clone a Repo Using Eclipse:</h2>
+ <ol>
+ <li>Open Eclipse. </li>
+ <p><li>Configure the window to show Git Views. To do this, go to Window/Show View/Other/Git. 
+ Highlight all/Ok. <em>Package Explorer should be at top left, Git Repos at bottom left, 
+ other git tabs bottom right below the editing window.</em></li></p>
+<p><li>Choose Clone a Git Repository in the Git Repositories view <em>(icon with the blue arrow)</em>.</li>
+<p><li>Open your GitHub account and choose the repository you want to clone. Copy the HTTPS clone URL 
+<em>(should look something like https://github.com/yourname/reponame).</em></li></p>
+<li>In the Clone Git Repository dialog box in Eclipse, paste the URL you copied.
+<em>Note that the Host and Repository fields self populate.</em></li></p>
+<p><li>Enter your GitHub user name and password. Check the box next to Store in Secure Store. 
+Click Next.</li></p>
+<p><li>In the Branch Selection, make sure both boxes have check marks. Click Next.</li></p>
+<p><li>Under Local Destination, browse to the GitHub workspace folder on your local drive 
+<em> (or create one)</em> to switch to the appropriate directory. 
+Double click the workspace folder. Click Save. Click Finish <em>(perhaps now would be a good 
+time to begin praying)</em>. Wait for the operation to complete. </li></p>
+<p><li>Click No in the Secure Storage dialog box to decline password recovery.<em> (note that if 
+you're using Eclipse, the program automatically restarts somewhere in here to reset itself with
+your correct info.)</em></li></p>
+<p><li>Right click in Project or Package Explorer window. Choose New/Project. 
+Open General and select Project. Click Next. Give the Project a name and click Finish.</li></p>
+</ol>
+
+
+<h2>Commit:</h2>
+ <ol>
+ <p><li>Click on the Git Staging tab in Eclipse. A list of new files should appear in the 
+ Unstaged Changes area. </li></p>
+<p><li>Highlight the files you wish to commit and drag them to the Staged Changes area. </li></p>
+<li>Add a Commit Message <em>(this tells other users about your file if new, and about changes if
+recently updated)</em>. Click Commit and Push to send the files to your GitHub repository.</li></p>
+</ol>
+ 
+
+<h2>Merge/Pull:</h2>
+ <ol>
+ <p><li>After you push your files upstream, someone will merge them on the other end and they are
+ then visible in your repo and available for other folks to work on.</li></p>
+ <p><li><em>So here's a question: if I create a new repo on git after this class, how do I add 
+ other people to it, and am I then the master merger? I sense an online tutorial in my future.</em></li></p>
+ <p><li>To update your local repo with new additions, right click on it, chose Team, and Fetch From
+ Upstream <em>(I think)</em>.</li></p>
+ </ol>
+</body>
+</html>
