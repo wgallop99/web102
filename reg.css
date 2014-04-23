@@ -1,0 +1,4 @@
+@CHARSET "ISO-8859-1";
+body {background:grey;}
+label {display:block;}
+.test {border:solid #FF00FF;}
