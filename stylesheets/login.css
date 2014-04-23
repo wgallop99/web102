@@ -1,6 +1,7 @@
 @CHARSET "ISO-8859-1";
 body{
-	background-color: 001933;
+	background-color: #001933;
 	font-family: verdana,helvetica,arial,sans-serif;
 	font-size:100%;
+	color: orange
 }
