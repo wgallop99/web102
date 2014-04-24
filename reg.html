@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register a new account</title>
+<title>Account Registration</title>
 	<link rel="stylesheet" href="stylesheets/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
     <link rel="stylesheet" href="reg.css">
@@ -14,22 +14,22 @@
     <form id="test" method="POST" action="/php/registration.php">
     	<label id="regheader">Register for your new account.</label>
     	<p>
-    	<label>First Name: <input id="fname" name="fname" type="text" required="required" placeholder="Jane"></label>
+    	<label>First Name: <input id="fname" name="fname" type="text" required placeholder="Jane"></label>
     	</p>
     	<p>
-    	<label>Last Name: <input id="lname" name="lname" type="text" required="required" placeholder="Smith"></label>
+    	<label>Last Name: <input id="lname" name="lname" type="text" required placeholder="Smith"></label>
     	</p>
     	<p>
-    	<label>Username: <input id="username" name="username" type="text" required="required" placeholder="jsmith"></label>
+    	<label>Username: <input id="username" name="username" type="text" required placeholder="jsmith"></label>
     	</p>
     	<p>
-    	<label>Password: <input id="password" name="password" type="password" required="required" placeholder="password"></label>
+    	<label>Password: <input id="password" name="password" type="password" required placeholder="password"></label>
     	</p>
     	<p>
-    	<label>Retype Password: <input id="verifpassword" name="password" type="password" required="required" placeholder="password"></label>
+    	<label>Retype Password: <input id="verifpassword" name="password" type="password" required placeholder="password"></label>
     	</p>
     	<p>
-    	<label>Email: <input id="email" name="email" type="text" required="required" placeholder="janesmith@email.com"></label>
+    	<label>Email: <input id="email" name="email" type="email" required placeholder="janesmith@email.com"></label>
     	</p>
     	<button type="submit">Submit</button>
     </form>
