@@ -8,17 +8,16 @@
 <link rel="stylesheet" href="stylesheets/search.css"/>
 </head>
 <body>
-
+<h1>Looking for someone's Email address?</h1>
 <div class="search">
-<form method="GET" action="http://www.google.com" >
+<form method="GET">
 <label>Last Name</label><input name="Last Name" type="text">
-<button type="submit">Search</button>
+<button type="submit" onclick="searchlast()">Search</button>
 <button type="reset">Reset</button>
 </form>
 </div>
 
-<div id="email">
-
-</div>
+<script src="javascripts/jquery-2.1.0.js"></script>
+    <script src="javascripts/search.js"></script>
 </body>
 </html>
