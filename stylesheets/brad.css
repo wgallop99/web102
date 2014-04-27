@@ -1,0 +1,34 @@
+@CHARSET "US-ASCII";
+
+form {
+  
+}
+label {
+  
+}
+input {
+  
+}
+fieldset {
+ 
+}
+fieldset input {
+  margin: 0;
+  width: auto;
+}
+#login_submit {
+ 
+}
+#login_submit:hover {
+  
+}
+#login_submit:active {
+ 
+}
+fieldset label {
+
+}
+fieldset label input {
+  margin: -2px 2px 0 0;
+  padding: 0;
+}
