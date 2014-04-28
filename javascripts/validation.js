@@ -1,4 +1,11 @@
 $(function() {
+//css dazzle
+	$("input").focus(function(){
+		  $(this).css("background-color","#9EA5A5");
+		});
+	$("input").blur(function(){
+	    $(this).css("background-color","#717487");
+	  });
 //check the email is good for login
 	var expEmail = /^[_a-z0-9-]+[(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/,
 	expLettersOnly = /^[a-zA-Z ]+$/,
@@ -11,7 +18,11 @@ function validateLength( fieldValue, minLength ){
 $( "#form-login").on( "keyup", "input.validate-locally", function() {
 	validateField( $(this));
 });
-
+/* function to slide down a panel revealing the login form?
+   $("#logHeader").click(function(){
+    $("#logBody").slideDown("slow");
+  });
+ */
 function validateField( field ){
 	var errorText = "",
 		error = false,
