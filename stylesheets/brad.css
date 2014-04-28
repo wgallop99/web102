@@ -1,34 +1,72 @@
 @CHARSET "US-ASCII";
+body {
+background-color: #ffffff;
+}
 
 form {
-  
+  background-color: #f1f1f1;
+  border-radius: 1px;
+  margin: 30px;
+  padding: 20px 30px 30px 30px;
+  height: 160px;
+  width: 200px;
+  box-shadow: 0px 0px 15px #666666;
 }
 label {
-  
+  display: block;
+  float: left;
+  font-size: 1.1em;
+  color: #666666;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 5px 2px 2px 2px; 
 }
 input {
-  
+  font-family: Arial;
+  font-weight: bold;
+  color: #666666;
+  width: 190px;
+  height: 20px;
+
 }
 fieldset {
- 
+  width: 190px;
+  margin: 20px 0 0 -10px;
+  background-color: 666666;
+  border-radius: 5px;
 }
 fieldset input {
   margin: 0;
   width: auto;
 }
 #login_submit {
- 
-}
+  height: 30px;
+  width:  60px;
+  font-family: Arial;
+  color: white;
+  background-color: #3366ff;
+  border: none;
+  border-radius: 5px;
+  float: left;
+  font-weight: bold;
+  box-shadow: 1px 4px 5px #666666;
+  }
 #login_submit:hover {
-  
+  box-shadow: 1px 4px 8px #666666;
 }
 #login_submit:active {
- 
+ box-shadow: 1px 4px 8px #666666;
+ background-color: #99FF00;
+ border: none;
 }
 fieldset label {
-
-}
+  float: right;
+  color: #666666;
+  cursor: pointer;
+  font-size: .8em;
+  margin: 2px 2px 0 0;
+ 	}
 fieldset label input {
-  margin: -2px 2px 0 0;
+  margin: 5px 2px 0 0;
   padding: 0;
 }
