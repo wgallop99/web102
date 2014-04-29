@@ -1,9 +1,4 @@
-function submit()
-	var firstName
-	var lastName
-	var emailAddress
-	var password
-	
+
 	
 	function validatePass()
 	{
@@ -34,8 +29,3 @@ function submit()
 // <label for="pass2">Confirm Password:</label>
 // <input type="password" name="pass2" id="pass2" onkeyup="validatePass(); return false;">
 //  <span id="confirmMessage" class="confirmMessage"></span>
-function error()
-	var firstName
-	var lastName
-	var emailAddress
-	var password

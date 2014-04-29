@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="stylesheets/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
     <link rel="stylesheet" href="reg.css">
+    <script type="text/javascript" src=javascripts/reg.js></script>
 </head>
  <body>
  	<h1>Web102 Account Registration</h1>
@@ -26,10 +27,11 @@
 	    	<label>Username: <input id="username" name="username" type="text" required placeholder="jsmith"></label>
 	    	</p>
 	    	<p>
-	    	<label>Password: <input id="password" name="password" type="password" required placeholder="Enter a password"></label>
+	    	<label for="pass1">Password:<input id="pass1" name="pass1" type="password" required placeholder="Enter a password"></label>
 	    	</p>
 	    	<p>
-	    	<label>Verify Password: <input id="verifpassword" name="password" type="password" required placeholder=" Retype your password"></label>
+	    	<label for="pass2">Verify Password:<input id="pass2" name="pass2" type="password" required placeholder=" Retype your password" onkeyup="validatePass(); return false;"></label>
+	    		<span id="confirmMessage" class="confirmMessage"></span>
 	    	</p>
 	    	<p>
 	    	<label>Email: <input id="email" name="email" type="email" required placeholder="janesmith@email.com"></label>
