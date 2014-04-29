@@ -1,0 +1,1 @@
+http://php.about.com/od/phpwithmysql/ss/php_search_4.htm
