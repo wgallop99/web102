@@ -24,10 +24,12 @@
     	<label>Username:<input name="username" type="text" required="required"></label>
     	    	</p>
     	<p>
-    	<label>Password:<input name="password" type="password" required="required"></label>
+    	<label for="pass1">Password:<input name="pass1" id="pass1" type="password" required="required"></label>
     	    	</p>
     	<p>
-    	<label>Retype Password:<input name="password" type="password" required="required"></label>
+    	<label for="pass2">Retype Password:<input name="pass2" id="pass2" type="password" required="required" 
+    		onkeyup="validatePass(); return false;"></label>
+    	    	<span id="confirmMessage" class="confirmMessage"></span>
     	    	</p>
     	<p>
     	<label>Email:<input name="email" type="text" required="required"></label>
