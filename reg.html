@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register a new account</title>
-	<link rel="stylesheet" href="stylesheets/bootstrap.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
-    <link rel="stylesheet" href="reg.css">
+<title>Registration</title>
+	<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap-theme.css">
+    <link type="text/css" rel="stylesheet" href="reg.css">
+    <script type="text/javascript" src=javascripts/reg.js></script>
 </head>
+<<<<<<< HEAD
 <body> 
   </head>
  	<div class = "regdiv">
@@ -28,6 +30,38 @@
     	<button class="createaccount" type="submit">Submit</button>
 
     </form>
+=======
+ <body>
+ 	<h1>Web102 Account Registration</h1>
+ 	<div class="regtext">
+	 	<p id="intro">
+	 	</p>
+ 	</div>
+ 	<div class="regform">
+	    <form id="test" method="POST" action="/php/registration.php">
+	    	<label id="regheader">Register for your new account.</label>
+	    	<p>
+	    	<label>First Name: <input id="fname" name="fname" type="text" required placeholder="Jane"></label>
+	    	</p>
+	    	<p>
+	    	<label>Last Name: <input id="lname" name="lname" type="text" required placeholder="Smith"></label>
+	    	</p>
+	    	<p>
+	    	<label>Username: <input id="username" name="username" type="text" required placeholder="jsmith"></label>
+	    	</p>
+	    	<p>
+	    	<label for="pass1">Password:<input id="pass1" name="pass1" type="password" required placeholder="Enter a password"></label>
+	    	</p>
+	    	<p>
+	    	<label for="pass2">Verify Password:<input id="pass2" name="pass2" type="password" required placeholder=" Retype your password" onkeyup="validatePass(); return false;"></label>
+	    		<span id="confirmMessage" class="confirmMessage"></span>
+	    	</p>
+	    	<p>
+	    	<label>Email: <input id="email" name="email" type="email" required placeholder="janesmith@email.com"></label>
+	    	</p>
+	    	<button type="submit">Submit</button>
+	    </form>
+>>>>>>> branch 'master' of https://github.com/TaylorHastings/web102.git
     </div>
   	<script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/jquery-2.1.0.js"></script>
