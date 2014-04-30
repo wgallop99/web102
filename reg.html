@@ -11,27 +11,16 @@
 <body> 
   </head>
   <body>
- 
-    <form class="test">
-    	<p><label id="regheader">Register for your new account.</label>
-    	<p>
-    	<label>First Name:<input name="fname" type="text" required placeholder="Jane"></label>
-    	</p>
-    	<p>
-    	<label>Last Name:<input name="lname" type="text" required placeholder="Smith"></label>
-    	    	</p>
-
-    	<p>
-    	<label for="pass1">Password:<input name="pass1" id="pass1" type="password" required placeholder="Enter a Password"></label>
-    	    	</p>
-    	<p>
-    	<label for="pass2">Retype Password:<input name="pass2" id="pass2" type="password" required placeholder="Retype Password"
-    		onkeyup="validatePass(); return false;"></label>
+ 	<h2><label class="regheader">Register For Your New Account.</label></h2>
+    <form class="regform">
+    	
+    	<div class="first"><p><label>First Name:<input name="fname" type="text" required placeholder="Jane"></label></p></div>
+    	<div class="last"><p><label>Last Name:<input name="lname" type="text" required placeholder="Smith"></label></p></div>
+    	<div class="pword"><p><label for="pass1">Password:<input name="pass1" id="pass1" type="password" required placeholder="Enter a Password"></label></p></div>
+    	<div class="retypepass"><p><label for="pass2">Retype Password:<input name="pass2" id="pass2" type="password" required placeholder="Retype Password"
+    		onkeyup="validatePass(); return false;"></label></p></div>
     	    	<span id="confirmMessage" class="confirmMessage"></span>
-    	    	</p>
-    	<p>
-    	<label>Email:<input name="email" type="email" required placeholder="jsmith@email.com"></label>
-    	</p>
+    	<div class="mail"><p><label>Email:<input name="email" type="email" required placeholder="jsmith@email.com"></label></p></div>
     	
     	<button class="buttonsubmit" type="submit">Submit</button>
     </form>
