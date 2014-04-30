@@ -2,22 +2,27 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Search Window</title>
 <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
 <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css"/>
 <link rel="stylesheet" href="stylesheets/search.css"/>
 </head>
 <body>
-<h1>Looking for someone's Email address?</h1>
+<h1>Looking for someone's email address?</h1>
 <div class="search">
 <form method="GET">
-<label>Last Name</label><input name="lastname" type="text">
-<button type="submit" onclick="searchlast()">Search</button>
-<button type="reset">Reset</button>
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="lastmame">Last Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Last Name">
+  </div>
+  <button type="submit" onclick="searchlast()">Search</button>
 </form>
-</div>
 
-<script src="javascripts/jquery-2.1.0.js"></script>
-    <script src="javascripts/search.js"></script>
+
+<script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/search.js"></script>
+
 </body>
 </html>
