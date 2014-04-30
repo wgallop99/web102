@@ -15,24 +15,22 @@
     <form class="test">
     	<p><label id="regheader">Register for your new account.</label>
     	<p>
-    	<label>First Name:<input name="fname" type="text" required="required"></label>
+    	<label>First Name:<input name="fname" type="text" required placeholder="Jane"></label>
     	</p>
     	<p>
-    	<label>Last Name:<input name="lname" type="text" required="required"></label>
+    	<label>Last Name:<input name="lname" type="text" required placeholder="Smith"></label>
+    	    	</p>
+
+    	<p>
+    	<label for="pass1">Password:<input name="pass1" id="pass1" type="password" required placeholder="Enter a Password"></label>
     	    	</p>
     	<p>
-    	<label>Username:<input name="username" type="text" required="required"></label>
-    	    	</p>
-    	<p>
-    	<label for="pass1">Password:<input name="pass1" id="pass1" type="password" required="required"></label>
-    	    	</p>
-    	<p>
-    	<label for="pass2">Retype Password:<input name="pass2" id="pass2" type="password" required="required" 
+    	<label for="pass2">Retype Password:<input name="pass2" id="pass2" type="password" required placeholder="Retype Password"
     		onkeyup="validatePass(); return false;"></label>
     	    	<span id="confirmMessage" class="confirmMessage"></span>
     	    	</p>
     	<p>
-    	<label>Email:<input name="email" type="text" required="required"></label>
+    	<label>Email:<input name="email" type="email" required placeholder="jsmith@email.com"></label>
     	</p>
     	
     	<button class="buttonsubmit" type="submit">Submit</button>
