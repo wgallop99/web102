@@ -1,3 +1,3 @@
-function searchlast()
-{alert('No Email Found!!!')
+function searchlast() {
+	alert('No Email Found!!!');
 }
