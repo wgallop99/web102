@@ -1,11 +1,8 @@
 $(function() {
-//css dazzle
-	$("input").focus(function(){
-		  $(this).css("background-color","#9EA5A5");
-		});
-	$("input").blur(function(){
-	    $(this).css("background-color","#717487");
-	  });
+/* 
+ Client-Side Validation
+ */	
+	
 //check the email is good for login
 	var expEmail = /^[_a-z0-9-]+[(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/,
 	expLettersOnly = /^[a-zA-Z ]+$/,
@@ -45,8 +42,5 @@ function validateField( field ){
 	}//switch end brace
 }//function end brace
 
-	
-
-	
 	
 });
