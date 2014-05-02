@@ -1,6 +1,6 @@
 @CHARSET "US-ASCII";
 body {
-background-color: #ffffff;
+background-color: #0FB94C;
 }
 form {
   background-color: #f1f1f1;
@@ -71,4 +71,33 @@ fieldset label input {
 }
 #formframe{
 	margin: 100px 0 0 0
+}
+#lean_overlay {
+    position: fixed;
+    z-index:3000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #483d8b;
+    display: none;
+    opacity: .8;
+}
+#lean_overlay {
+position: fixed;
+z-index: 10000;
+top: 0px;
+left: 0px;
+height:100%;
+width:100%;
+background: #000;
+display: none;
+
+}
+
+#login_popup {
+width: 310px;
+display:none;
+background: #091ECF;   
+opacity: .8;
 }
