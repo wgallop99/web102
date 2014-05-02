@@ -1,11 +1,15 @@
 <?php
-	$firstname = $GET[''];
-	$lastname = $_GET[''];
-	$email = $_GET[''];
-	$password1 = $_GET[''];
-	$password2 = $_GET[''];
+	$firstname = "";
+	$lastname = "";
+	$username = "";
+	$email = "";
+	$password1 = "";
+	$password2 = "";
 
-if (($firstname==null || $firstname=="") && ($lastname==null || $lastname=="") && ($email==null || $email=="") && ($password1==null || $password1=="") && ($password2==null || $password2==""))
+if ((isset($_GET['Fname'] && |isempty($_GET['Fname'])) && (isset($_GET['Lname'] && |isempty$_GET['Lname'])) && (isset($_GET['Username'] && |isempty$_GET['Username'])) && (isset($_GET['Password'] && |isempty$_GET['Password'])) && (isset($_GET['password2'] && |isempty$_GET['password2'])) && (isset($_GET['email'] && |isempty$_GET['email']))
+
+
+if (($firstname=isset & $firstname=="") && ($lastname==null || $lastname=="") && ($email==null || $email=="") && ($password1==null || $password1=="") && ($password2==null || $password2==""))
 	{
 	echo "All fields must be filled out";
 	return false;
@@ -43,9 +47,4 @@ else
 	{
 	echo "You've registered!";
 	}
-
-	
-// extra - if (!isset(($_GET['firstname'])) {
-// http://techtalk.virendrachandak.com/php-isset-vs-empty-vs-is_null/
-
 ?>

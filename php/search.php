@@ -2,7 +2,7 @@
         $last_name = $_GET['LastName'];
 
         $email = "";
-
+        
         $con = mysql_connect("iweb.ossys.com","web102","PUR5tr3ngth","web102");
         if (mysqli_connect_errno()) {
                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
