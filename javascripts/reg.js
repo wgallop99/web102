@@ -21,7 +21,17 @@
 	        message.style.color = badColor;
 	        message.innerHTML = "&#x1f6ab Passwords Do Not Match!";
 	    }
-	}  //End of function validatePass
+	}  
+	$(document).ready(function(){
+	    $(".buttonsubmit").mouseenter(function(){
+	        $(".buttonsubmit").fadeTo("slow",1);
+	    });
+	    $(".buttonsubmit").mouseleave(function(){
+	        $(".buttonsubmit").fadeTo("slow",0.5);
+	    });
+	});
+	
+	//End of function validatePass
 // Will need the following code in HTML to run
 // <label for="pass1">Password:</label>
 // <input type="password" name="pass1" id="pass1">

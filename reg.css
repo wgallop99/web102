@@ -18,8 +18,14 @@ label {display: block;text-align:left;}
 .mail {margin-left:70px;}
 fname {4px solid darkblue}
 .buttonsubmit {float: right;
-	color: black;
-    border: 4px solid darkblue; 
+	height: 50px;
+    width: 80px;
+	color: white;
+	background-color: green;
+    border: 4px solid darkblue;
+    opacity: 0.6;
+    border-radius: 5px;
+    box-shadow: 1px 4px 5px #666666;
     font-weight:bold;
     font-family:"Comic Sans MS", cursive, sans-serif;
     }
