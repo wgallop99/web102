@@ -7,24 +7,18 @@
 	<link rel="stylesheet" href="stylesheet/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="stylesheets/login.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascripts/login.js"></script>
+  <script type="text/javascript" src="javascripts/qunit.js"></script>
+  <script src="javascripts/jquery.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.backstretch.js"></script>
 	<script type="text/javascript" src="javascripts/jquery.leanModal.min.js"></script>
-	<script type="text/javascript">
-        $(function() {
-            $('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });       
-        });
-	</script>
-	<script type="text/javascript"> src="javascripts/jquery-2.1.0.min.js"</script>
-	<script type="text/javascript"> src="javascripts/bootstrap.min.js"</script>
-	<script type="text/javascript"> src="javascripts/login.js"</script>
-	<script type="text/javascript" src="jquery.fullscreenr.js"></script>
-	<script type="text/javascript">
-		$('#imageid').fullscreenr({width: 1229, height: 768});
-	</script>
+
 </head>
 <body>
-<section>
-		<img src="images/red_forest.jpg" alt="Fairy Portal" id="imageid">
-	</section>
+
+<div id="container">
 	   <div class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container">
         <div class="navbar-header">
@@ -39,15 +33,14 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
                
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a class="#login" rel="leanModal" href="#login_popup">
-    Login
-</a>  </li>
+            <li class="#index.html"><a href="#">Home</a></li>
+            <li><a href="#reg.html">Register</a></li>
+            <li><a href="#search.html">Search</a></li>
+            <li><a class="#active" rel="leanModal" href="#login_popup">Login</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
-    </div><!-- End Nav bar -->
+    </div>
     
     <div class="smallspace"></div>
    
@@ -64,6 +57,28 @@
   		</fieldset>
 	  </form>
 	</div>
-		
+</div>
+<script type="text/javascript">
+        $(function() {
+            $('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });       
+        });
+</script>	
+<script>
+$.backstretch([
+  "images/red_forest.jpg",
+  "images/df_1.jpg",
+  "images/df_2.jpg",
+  "images/df_3.jpg",
+  "images/df_4.jpg",
+  "images/df_5.jpg",
+  "images/df_6.jpg",
+  "images/df_7.jpg",
+  "images/df_8.jpg",
+  "images/df_9.jpg"
+  ], {
+    fade: 750,
+    duration: 4000
+});
+</script>
 </body>
 </html>
