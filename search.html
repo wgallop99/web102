@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Window</title>
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
+<link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css"/>
+<link rel="stylesheet" href="stylesheets/search.css"/>
+</head>
+<body>
+<h1>Looking for someone's email address?</h1>
+<div class="search">
+<form method="GET">
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="lastmame">Last Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Last Name">
+  </div>
+  <button type="submit">Search</button>
+</form>
+</div>
+
+<script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/search.js"></script>
+
+<script>
+ 	$(document).ready(function() {
+ 		$('button[type="submit"]').click(searchlast);
+ 	});
+</script>
+
+</body>
+</html>
