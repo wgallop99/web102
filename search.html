@@ -10,11 +10,11 @@
 <body>
 <h1>Looking for someone's email address?</h1>
 <div class="search">
-<form method="GET">
-<form class="form-inline" role="form">
+
+<form action="/web102/php/search.php" class="form-inline" role="form" method="GET">
   <div class="form-group">
-    <label class="sr-only" for="lastmame">Last Name</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Last Name">
+    <label class="sr-only" for="lastname">Last Name</label>
+    <input name="lastname" type="email" class="form-control" id="exampleInputEmail2" placeholder="Last Name">
   </div>
   <button type="submit">Search</button>
 </form>
