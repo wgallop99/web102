@@ -24,7 +24,7 @@ $password = $_POST["login_password"];
 	if($password==$password2) {
     	echo"You are a validated user.";
     	$_SESSION['auth']=true;
-    	header( 'Location: php/dashboard.php');
+    	header( 'Location: dashboard.php');
     	}
 	else {
     	echo"Sorry, your credentials are not valid, Please try again.";
