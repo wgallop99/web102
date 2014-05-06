@@ -1,21 +1,26 @@
 <?php
 
-	$firstname = $_GET[''];
-	$lastname = $_GET[''];
-	$email = $_GET[''];
-	$password1 = $_GET[''];
-	$password2 = $_GET[''];
+if((!isset($_POST['Fname']) && !isempty($_POST['Fname'])) && 
+	(!isset($_POST['Lname']) && !isempty($_POST['Lname'])) && 
+	(!isset($_POST['Username']) && !isempty($_POST['Username'])) && 
+	(!isset($_POST['password2']) && !isempty($_POST['password2'])) && 
+	(!isset($_POST['Email']) && !isempty($_POST['Email']))) {
+	echo "You must fill out all fields, go back and try again!";
+} else {
+	
+	    $con = mysql_connect("iweb.ossys.com","web102","PUR5tr3ngth","web102");
+        if (mysqli_connect_errno()) {
+                echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }
+        mysql_select_db("web102");
 
-if {
-// check all fields are filled
-// check passwords match
-	echo '';
-}
-else if {
-	echo '';
-}
-else {
-	echo '';
+        $result = mysql_query("INSERT INTO user (first_name, last_name, username, password, email) VALUES ($_POST['Fname'], $_POST['Lname'], $_POST['Username'], $_POST['password2'], $_POST['Email'])");
+        if(!$result) {
+                echo mysql_error();
+        } else {
+        	echo "You successfully registered!";
+        }
+	
 }
 
 ?>

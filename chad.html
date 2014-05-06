@@ -3,13 +3,24 @@
 <head>
 <meta charset="US-ASCII">
 <title>Insert title here</title>
+
+<link rel="stylesheet" href="stylesheets/chad.css">
 </head>
 <body>
 
 	<form action="" method="get">
-		<label>First Name:</label><input type="text" name="first_name">
-		<button type="submit">Send!</button>
+		<label id="firstname_label">First Name:</label><input type="text" name="first_name">
+		<button type="submit" id="btn">Send!</button>
 	</form>
+	<script src="javascripts/jquery-2.1.0.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$("#btn").click(function() {
+				alert('sending');
+			});
+		});
+	</script>
 
 </body>
 </html>
