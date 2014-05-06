@@ -22,7 +22,7 @@ if((!isset($_POST['Fname']) && !isempty($_POST['Fname'])) &&
 	    }
 	    mysql_select_db("web102");
 	
-	    $result = mysql_query("INSERT INTO user (first_name, last_name, username, password, email) VALUES ($_POST['Fname'], $_POST['Lname'], $_POST['Username'], $_POST['password2'], $_POST['Email'])");
+	    $result = mysql_query("INSERT INTO user (first_name, last_name, username, password, email) VALUES ('$_POST["fname"]', '$_POST["lname"]', '$_POST["username"]', '$_POST["pass1"]', '$_POST["email"]')");
 	    if(!$result) {
 	            echo mysql_error();
 	    } else {
