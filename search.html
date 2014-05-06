@@ -10,14 +10,15 @@
 <body>
 <h1>Looking for someone's Email address?</h1>
 <div class="search">
-<form method="GET">
-<label>Last Name</label><input name="Last Name" type="text">
-<button type="submit" onclick="searchlast()">Search</button>
-<button type="reset">Reset</button>
+
+<form method="GET" action="http://localhost/index.php">
+	<label>Last Name</label><input name="LastName" type="text">
+	<button type="submit">Search</button>
+	<button type="reset">Reset</button>
 </form>
+
 </div>
 
 <script src="javascripts/jquery-2.1.0.js"></script>
-    <script src="javascripts/search.js"></script>
 </body>
 </html>
