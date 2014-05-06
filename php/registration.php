@@ -1,10 +1,10 @@
 <?php
 
-if((!isset($_POST['Fname']) && !isempty($_POST['Fname'])) && 
-	(!isset($_POST['Lname']) && !isempty($_POST['Lname'])) && 
-	(!isset($_POST['Username']) && !isempty($_POST['Username'])) && 
-	(!isset($_POST['password2']) && !isempty($_POST['password2'])) && 
-	(!isset($_POST['Email']) && !isempty($_POST['Email']))) {
+if((!isset($_POST['fname']) && !isempty($_POST['fname'])) && 
+	(!isset($_POST['lname']) && !isempty($_POST['lname'])) &&
+	(!isset($_POST['pass1']) && !isempty($_POST['pass1'])) && 
+	(!isset($_POST['pass2']) && !isempty($_POST['pass2'])) && 
+	(!isset($_POST['email']) && !isempty($_POST['email']))) {
 	echo "You must fill out all fields, go back and try again!";
 } else {
 	$first_name = $_POST['fname'];
@@ -22,7 +22,7 @@ if((!isset($_POST['Fname']) && !isempty($_POST['Fname'])) &&
 	    }
 	    mysql_select_db("web102");
 	
-	    $result = mysql_query("INSERT INTO user (first_name, last_name, username, password, email) VALUES ($_POST['fname'], $_POST['lname'], $_POST['username'], $_POST['pass1'], $_POST['email'])");
+	    $result = mysql_query("INSERT INTO user (first_name, last_name, password, email) VALUES ('$first_name', '$last_name', '$pass1', '$email')");
 	    if(!$result) {
 	            echo mysql_error();
 	    } else {
