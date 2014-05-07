@@ -11,7 +11,7 @@
 <h1>Looking for someone's email address?</h1>
 <div class="search">
 
-<form action="/web102/php/search.php" class="form-inline" role="form" method="GET">
+<form action="/web102/php/search.php" class="form-inline" role="form" method="GET" onsubmit="return false;">
   <div class="form-group">
     <label class="sr-only" for="lastname">Last Name</label>
     <input name="lastname" type="text" class="form-control" id="exampleInputEmail2" placeholder="Last Name">
@@ -25,9 +25,19 @@
 <script src="javascripts/search.js"></script>
 
 <script>
-/*    	$(document).ready(function() {
- 		$('button[type="submit"]').click(searchlast);
- 	}); */
+	$(document).ready(function() {
+ 		$('button[type="submit"]').click(function() {
+ 			alert($("input:text[name=lastname]").val());
+ 			/* $.ajax({
+				type: "GET",
+				url: "/web102/php/search.php",
+				data: { lastname: $("input:text[name=lastname]").val() }
+			})
+			.done(function( msg ) {
+				alert( "Data Saved: " + msg );
+			}); */
+ 		});
+ 	});
 </script>
 
 </body>
