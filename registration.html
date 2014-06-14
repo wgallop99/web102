@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>MIB Alien Registration System (ARS)</title>
@@ -12,9 +12,31 @@
 		<script src="javascripts/jquery-2.1.1.js"></script>
 		<script src="javascripts/bootstrap.js"></script>
 		<script>
-			$(document).ready(function() {
-				console.log("I'm ready!");
-			});
+			
 		</script>
+		
+		<form action="" method="post">
+			Please use Latin Earth Characters. Contact Agent P if you have any 
+			questions or difficulty/<br><br>
+			Name : 	<input name="UserName" type="text"><br><br>
+			Age :  <input name="UserAge" type="text"><br><br>
+			Species : <input name="UserSpecies" type="text"><br><br>
+			Home Planet/Satellite : <input name="HomePlanet" type="text"><br><br>
+			Home System : <input name="HomeStar" type="text"><br><br>
+			Expected Duration Of Stay : 
+			<select name="Duration">
+				<option></option>
+				<option>Permanent (Applying for Citizenship)</option>
+				<option>Permanent</option>
+				<option>More than 1 Earth-Year</option>
+				<option>Less than 1 Earth-Year</option>
+				<option>More than 50 Earth-Rotations</option>
+				<option>Less than 50 Earth-Rotations</option>
+			</select><br><br>
+			Email Address : <input name="E_Address" type="text"><br><br>
+			Desired Password : <input name="Password1" type="password"><br><br>
+			Desired Password : <input name="Password2" type="password"><br>
+		</form>
+		
 	</body>
 </html>
