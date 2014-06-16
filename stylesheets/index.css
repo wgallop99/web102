@@ -1,1 +1,18 @@
 @CHARSET "ISO-8859-1";
+
+
+
+.mib-back-theme { 
+  background: url(http://www.listofimages.com/wp-content/uploads/2012/04/earth-views-clouds-color-colorful-continents-earth-horizon-hubble-overview-planet-space.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+li a{
+	font-family: 'mib','Frijole', cursive;
+}
+@font-face {
+font-family: 'mib';
+src:  url('Men In Black.ttf')  format('truetype'),
