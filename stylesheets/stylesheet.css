@@ -88,19 +88,12 @@ div.instructor_pullout p {margin-top: 10px;} /* padding top: 20px , margin-left:
 div.instructor_pullout h3 {font-size: 15px; font-weight: bold; padding-left: 14px; }
 p.context_text strong {font-weight: bold; }
 div.non_instructor {float: right; text-align: left; display: inline-block;}
-
-
 div.instructor_bio { float: left; margin-top: 15px; width: 250px; text-align: left; word-wrap: break-word; padding-left: 32px; display: inline-block; } 
-
 p.content_text p { text-align: inherit; font-family: inherit; width: inherit; margin: inherit; font-size: inherit; line-height: inherit; color: inherit; margin-top: inherit;}
-
-/* do I have to be this specific? Can I just do ul? */
 ul.bottom_list {float:left; text-align: left; padding-left: 70px; font-family: "Lato","Arial Black","Arial Bold",sans-serif; width: 85%; margin: 0 auto 20px auto; font-size: 12pt; line-height: 1.4em; color: #777;}
 div.index_bottom_content li.bottom_list_2 {list-style: circle; margin-left: 40px; margin-bottom: 20px;}
 div.index_bottom_content li.bottom_list_1 {list-style: disc;}
 i {font-style: italic;}
-
-
 div.index_left_content{height: 431px;}
 /* End of Tanner's additions */
 
@@ -123,4 +116,9 @@ div.assignment_text { display: none; font-family: Lato; width: 95%; margin: 0 au
 p.assignment_box_details { margin-bottom: 15px; }
 div.active_assignment { display: block; }
 li.active_assignment_link { color: #999 !important; }
+
+/* added by Tanner for references */
+ul.bottom_list {float:left; text-align: left; padding-left: 70px; padding-top: 15px; font-family: "Lato","Arial Black","Arial Bold",sans-serif; width: 85%; margin: 0 auto 20px auto; font-size: 12pt; line-height: 1.4em; color: #777;}
+div.index_bottom_content li.bottom_list_2 {list-style: circle; margin-left: 40px; margin-bottom: 20px;}
+div.index_bottom_content li.bottom_list_1 {list-style: disc;}
 
