@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$(".mybtn").click(function() {
 		$("div#errorMsg").css("display", "block");
-		$("div#errorMsg").html("Searching Alien Database");
+		$("div#errorMsg").html("authorizing agent");
  
 		//Get values
 		var txtUserName = $("input#username").val();
@@ -10,7 +10,7 @@ $(document).ready(function(){
 			// check if the fields are empty
 			if((txtUserName=="" ) || (txtPassword== "")){
 				$("div#errorMsg").css("display", "block");
-				$("div#errorMsg").html("Please Enter Username, Password!");
+				$("div#errorMsg").html("Please Enter Agent ID, Password!");
  
 					} else {
 						//Call the ajax function to check the usernames
@@ -30,7 +30,7 @@ function checkUser(txtUserName, txtPassword){
 			success: function(response) {
 				if (response == "notFound"){
 					$("div#errorMsg").css("display", "block");
-					$("div#errorMsg").html("Sorry, Alien was not found!");
+					$("div#errorMsg").html("Agent not authorized!");
 						} else {
 							window.location.replace("http://google.com");
 						   	}
