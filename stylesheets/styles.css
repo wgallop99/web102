@@ -1,0 +1,14 @@
+header{
+-webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+text-align: center;
+color: white; /*I know this isn't good, but I am lazy*/
+background-color: black;
+
+margin-bottom: 5px;
+}
