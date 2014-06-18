@@ -81,7 +81,6 @@ a.read_more:hover { transition: all 0.15s ease; -o-transition: all 0.15s ease; -
 h2.content_title { margin: 25px 0 20px 0; font-family: LatoBold; font-size: 18pt; font-weight: 900; }
 strong { font-weight: bold; }
 
-/* Tanner's additions */ 
 section.index_content div.index_right_content  img.instructor_thumb {float: left; padding-left: 15px; padding-top: 10px; padding-right: 5px; } 
 div.instructor_pullout {float: left; margin-left: 20px; text-align: left; width: 250px; display: inline-block;}
 div.instructor_pullout p {margin-top: 10px;} /* padding top: 20px , margin-left: 15px; */
@@ -95,7 +94,6 @@ div.index_bottom_content li.bottom_list_2 {list-style: circle; margin-left: 40px
 div.index_bottom_content li.bottom_list_1 {list-style: disc;}
 i {font-style: italic;}
 div.index_left_content{height: 431px;}
-/* End of Tanner's additions */
 
 /* screencasts */
 
@@ -117,7 +115,7 @@ p.assignment_box_details { margin-bottom: 15px; }
 div.active_assignment { display: block; }
 li.active_assignment_link { color: #999 !important; }
 
-/* added by Tanner for references */
+/* references */
 ul.bottom_list {float:left; text-align: left; padding-left: 70px; padding-top: 15px; font-family: "Lato","Arial Black","Arial Bold",sans-serif; width: 85%; margin: 0 auto 20px auto; font-size: 12pt; line-height: 1.4em; color: #777;}
 div.index_bottom_content li.bottom_list_2 {list-style: circle; margin-left: 40px; margin-bottom: 20px;}
 div.index_bottom_content li.bottom_list_1 {list-style: disc;}
