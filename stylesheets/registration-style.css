@@ -1,3 +1,9 @@
+@font-face {
+    font-family: SpaceAge;
+    src: url("../fonts/space-age.ttf");
+    font-weight:400;
+}
+
 header{
 -webkit-border-top-left-radius: 20px;
 -webkit-border-top-right-radius: 20px;
@@ -7,9 +13,10 @@ border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 
 text-align: center;
-color: white; /*I know this isn't good, but I am lazy*/
+color: #05ED3B; 
 background-color: black;
-
+background-image: url("../images/stars.jpg");
+font-family: SpaceAge;
 margin-bottom: 5px;
 }
 
