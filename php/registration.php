@@ -1,17 +1,24 @@
 <?php
 
-if((!isset($_POST['fname']) && !isempty($_POST['fname'])) && 
-	(!isset($_POST['lname']) && !isempty($_POST['lname'])) &&
-	(!isset($_POST['pass1']) && !isempty($_POST['pass1'])) && 
-	(!isset($_POST['pass2']) && !isempty($_POST['pass2'])) && 
-	(!isset($_POST['email']) && !isempty($_POST['email']))) {
+if((!isset($_POST['UserName']) && !isempty($_POST['UserName'])) && 
+	(!isset($_POST['UserSpecies']) && !isempty($_POST['UserSpecies'])) &&
+	(!isset($_POST['HomePlanet']) && !isempty($_POST['HomePlanet'])) &&
+	(!isset($_POST['HomeStar']) && !isempty($_POST['HomeStar'])) &&
+	(!isset($_POST['Duration']) && !isempty($_POST['Duration'])) &&
+	(!isset($_POST['E_Address']) && !isempty($_POST['E_Address'])) &&
+	(!isset($_POST['Password1']) && !isempty($_POST['Password1'])) &&
+	(!isset($_POST['Password2']) && !isempty($_POST['Password2']))) {
 	echo "You must fill out all fields, go back and try again!";
 } else {
-	$first_name = $_POST['fname'];
-	$last_name = $_POST['lname'];
-	$pass1 = $_POST['pass1'];
-	$pass2 = $_POST['pass2'];
-	$email = $_POST['email'];
+	$name = $_POST['UserName'];
+	$age = $_POST['UserAge'];
+	$species = $_POST['UserSpecies'];
+	$planet = $_POST['HomePlanet'];
+	$star = $_POST['HomeStar'];
+	$duration = $_POST['Duration'];
+	$address = $_POST['E_Address'];
+	$pass1 = $_POST['Password1'];
+	$pass2 = $_POST['Password2'];
 	
 	if($pass1 != $pass2) {
 		echo "Passwords don't match!";
@@ -22,7 +29,7 @@ if((!isset($_POST['fname']) && !isempty($_POST['fname'])) &&
 	    }
 	    mysql_select_db("web102");
 	
-	    $result = mysql_query("INSERT INTO user (first_name, last_name, password, email) VALUES ('$first_name', '$last_name', '$pass1', '$email')");
+	    $result = mysql_query("INSERT INTO alien (name, age, species, planet, star, duration, address, pass) VALUES ('$name', '$age', '$species', '$planet', '$star', '$duration', '$address', '$pass')");
 	    if(!$result) {
 	            echo mysql_error();
 	    } else {
