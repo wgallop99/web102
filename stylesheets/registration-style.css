@@ -4,22 +4,36 @@
     font-weight:400;
 }
 
-header{
--webkit-border-top-left-radius: 20px;
--webkit-border-top-right-radius: 20px;
--moz-border-radius-topleft: 20px;
--moz-border-radius-topright: 20px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-
+#header{
 text-align: center;
 color: #05ED3B; 
 background-color: black;
 background-image: url("../images/stars.jpg");
 font-family: SpaceAge;
-margin-bottom: 5px;
+height: 100px;
 }
 
 .errorMessage {
 	color: red;
+}
+
+#height {
+	height: 100px;
+	background-color: rgb(39, 35, 35);
+}
+
+#height_2 {
+	height: 740px;
+	background-color: rgb(39, 35, 35);
+}
+
+#height_3 {
+	height: 50px;
+	background-color: rgb(39, 35, 35);
+}
+
+#height_4 {
+	height: 40px;
+	margin-top: 10px;
+	background-color: rgb(39, 35, 35);
 }
