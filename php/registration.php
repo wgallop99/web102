@@ -31,7 +31,7 @@ if((!isset($_POST['UserName']) && !isempty($_POST['UserName'])) &&
 	    }
 	    mysql_select_db("web102");
 
-	    $result = mysql_query("INSERT INTO alien (name, age, species, planet, star, duration, address, pass) VALUES ('$name', '$age', '$species', '$planet', '$star', '$duration', '$address', '$pass')");
+	    $result = mysql_query("INSERT INTO alien (name, age, species, planet, star, duration, address, pass) VALUES ('$name', '$age', '$species', '$planet', '$star', '$duration', '$address', '$pass1')");
 
 	    if(!$result) {
 	            echo mysql_error();
