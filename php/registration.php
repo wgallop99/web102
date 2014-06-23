@@ -1,14 +1,14 @@
 <?php
 
-if((!isset($_POST['UserName']) && !isempty($_POST['UserName'])) && 
-	(!isset($_POST['UserAge']) && !isempty($_POST['UserAge'])) &&
-	(!isset($_POST['UserSpecies']) && !isempty($_POST['UserSpecies'])) && 
-	(!isset($_POST['HomePlanet']) && !isempty($_POST['HomePlanet'])) && 
-	(!isset($_POST['HomeStar']) && !isempty($_POST['HomeStar'])) && 
-	(!isset($_POST['Duration']) && !isempty($_POST['Duration'])) && 
-	(!isset($_POST['E_Address']) && !isempty($_POST['E_Address'])) && 
-	(!isset($_POST['Password1']) && !isempty($_POST['Password1'])) &&
-	(!isset($_POST['Password2']) && !isempty($_POST['Password2']))) {
+if((!isset($_POST['UserName']) || isempty($_POST['UserName'])) || 
+	(!isset($_POST['UserAge']) || isempty($_POST['UserAge'])) ||
+	(!isset($_POST['UserSpecies']) || isempty($_POST['UserSpecies'])) || 
+	(!isset($_POST['HomePlanet']) || isempty($_POST['HomePlanet'])) || 
+	(!isset($_POST['HomeStar']) || isempty($_POST['HomeStar'])) || 
+	(!isset($_POST['Duration']) || isempty($_POST['Duration'])) || 
+	(!isset($_POST['E_Address']) || isempty($_POST['E_Address'])) || 
+	(!isset($_POST['Password1']) || isempty($_POST['Password1'])) ||
+	(!isset($_POST['Password2']) || isempty($_POST['Password2']))) {
 	echo "You must fill out all fields, go back and try again!";
 } else {
 	$name = $_POST['UserName'];
