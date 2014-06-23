@@ -16,6 +16,8 @@
     			<label>Name or Email Address</label>
   			</div>
 			<button id="search_btn" type="button">Search</button>
+			<div id="age"></div>
+			<div id="species"></div>
 		</form>
 		
 		<script src="javascripts/jquery-2.1.1.js"></script>
@@ -30,7 +32,8 @@
 					  data: { search: $("input[name='search']").val() }
 					})
 				    .done(function( msg ) {
-				      alert( "Result: " + msg );
+				    	alert('done!');
+				    	$('#age').text(msg.result.age);
 				    });
 				});
 				
