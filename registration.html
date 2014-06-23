@@ -5,7 +5,7 @@
 		
 		<link rel="stylesheet" href="stylesheets/bootstrap.css">
 		<link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
-		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/registration-style.css">
 	</head>
 	<body>
 
@@ -17,55 +17,60 @@
 		<p> Please use Latin Earth Characters. Contact Agent P if you have any 
 		questions or difficulty </p>
 		
-		<form role="form">
+		<form action="registration/registration.php" method="post" id="alienRegistration">
 			<div class = "form-group">
-				<label for="name"> Name </label>
-				<input type="text" class="form-control" id="name" placeholder="Enter your full name">
+				<label for="UserName"> Name </label>
+				<input name="UserName" type="text" class="form-control" id="UserName" placeholder="Enter your full name" />
+				<span class="errorMessage" id="nameError">Please enter a valid name</span>
 			</div>
 			<div class = "form-group">
 				<label for="age"> Age </label>
-				<input type="text" class="form-control" id="age" placeholder="Enter your age">
+				<input name="UserAge" type="text" class="form-control" id="UserAge" placeholder="Enter your age">
+				<span class="errorMessage" id="ageError">Please enter a valid age (Earth digits only)</span>
 			</div>
 			<div class = "form-group">
-				<label for="species"> Species </label>
-				<input type="text" class="form-control" id="name" placeholder="Enter your species">
+				<label for="UserSpecies"> Species </label>
+				<input name="UserSpecies" type="text" class="form-control" id="UserSpecies" placeholder="Enter your species">
+				<span class="errorMessage" id="speciesError">Please enter a valid species (use only Earth Latin)</span>
 			</div>
 			<div class = "form-group">
-				<label for="home"> Home Planet/Satellite </label>
-				<input type="text" class="form-control" id="home" placeholder="Where are you from?">
+				<label for="HomePlanet"> Home Planet/Satellite </label>
+				<input name="HomePlanet" type="text" class="form-control" id="HomePlanet" placeholder="Where are you from?">
+				<span class="errorMessage" id="planetError">Please enter a valid planet (use only Earth Latin)</span>
 			</div>
 			<div class = "form-group">
-				<label for="home-system"> Home System </label>
-				<input type="text" class="form-control" id="home-system" placeholder="What home system are from?">
+				<label for="HomeStar"> Home System </label>
+				<input name="HomeStar" type="text" class="form-control" id="HomeStar" placeholder="What home system are you from?">
+				<span class="errorMessage" id="starError">Please enter a valid star system (use only Earth Latin)</span>
 			</div>
 			<p> <strong> Expected Duration of Stay </strong> </p>
-			<select class="form-control">
+			<select class="form-control" id="Duration" name="Duration">
+				<option></option>
  				<option>Permanent (Applying for Citizenship)</option>
+ 				<option>Permanent</option>
+ 				<option>More than 1 Earth-Year</option>
 				<option>Less than 1 Earth-Year</option>
-				<option>1 Earth-Year - 50 Earth-Rotations</option>
-				<option>More than 50 Earth Rotations</option>
+				<option>More than 50 Earth-Rotations</option>
+				<option>Less than 50 Earth-Rotations</option>
 			</select>
+			<span class="errorMessage" id="durationError">Please select a duration</span>
 			<div class = "form-group">
-				<label for="home-system"> Home System </label>
-				<input type="text" class="form-control" id="home-system" placeholder="What home system are from?">
+				<label for="E_Address"> Email Address </label>
+				<input name="E_Address" type="email" class="form-control" id="E_Address" placeholder="Enter your Email Address">
+				<span class="errorMessage" id="eaddressError">Please enter a valid e-mail address</span>
 			</div>
 			<div class = "form-group">
-				<label for="email"> Email Address </label>
-				<input type="text" class="form-control" id="email" placeholder="Enter your Email Address">
+				<label for="Password1"> Password </label>
+				<input name="Password1" type="password" class="form-control" id="Password1" placeholder="Enter your password">
+				<span class="errorMessage" id='password1emptyError'>Please enter a password</span>
 			</div>
 			<div class = "form-group">
-				<label for="username"> Username </label>
-				<input type="text" class="form-control" id="username" placeholder="Pick a username">
+				<label for="Password2"> Confirm Password </label>
+				<input name="Password2" type="password" class="form-control" id="Password2" placeholder="Re-enter your password">
+				<span class="errorMessage" id='password2emptyError'>Please re-enter password</span>
 			</div>
-			<div class = "form-group">
-				<label for="password"> Password </label>
-				<input type="text" class="form-control" id="password" placeholder="Enter your password">
-			</div>
-			<div class = "form-group">
-				<label for="password"> Confirm Password </label>
-				<input type="text" class="form-control" id="password" placeholder="Re-enter your password">
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
+			<span class="errorMessage" id='passwordmatchError'>Passwords do not match. Please re-enter both passwords.</span><br>
+			<button name="submit" type="submit" class="btn btn-default" value="submit">Submit</button>
 		</form>
 		</div>
 		
