@@ -15,14 +15,25 @@
     			<input type="text" name="search" required/>
     			<label>Name or Email Address</label>
   			</div>
-		<button>Search</button>
-	</form>
+			<button id="search_btn" type="button">Search</button>
+		</form>
 		
 		<script src="javascripts/jquery-2.1.1.js"></script>
 		<script src="javascripts/bootstrap.js"></script>
 		<script>
 			$(document).ready(function() {
-				console.log("I'm ready!");
+				
+				$('#search_btn').click(function() {
+					$.ajax({
+					  type: "GET",
+					  url: "php/search.php",
+					  data: { search: $("input[name='search']").val() }
+					})
+				    .done(function( msg ) {
+				      alert( "Result: " + msg );
+				    });
+				});
+				
 			});
 		</script>
 	</body>
