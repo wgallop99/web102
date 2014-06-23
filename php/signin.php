@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$email = $_POST["login_email"];
-$password = $_POST["login_password"];
+$email = $_POST["email"];
+$password = $_POST["password"];
 
         $con = mysql_connect("iweb.ossys.com","web102","PUR5tr3ngth","web102");
         if (mysqli_connect_errno()) {
