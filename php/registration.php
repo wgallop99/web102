@@ -1,11 +1,12 @@
 <?php
 
 if((!isset($_POST['UserName']) && !isempty($_POST['UserName'])) && 
-	(!isset($_POST['UserSpecies']) && !isempty($_POST['UserSpecies'])) &&
-	(!isset($_POST['HomePlanet']) && !isempty($_POST['HomePlanet'])) &&
-	(!isset($_POST['HomeStar']) && !isempty($_POST['HomeStar'])) &&
-	(!isset($_POST['Duration']) && !isempty($_POST['Duration'])) &&
-	(!isset($_POST['E_Address']) && !isempty($_POST['E_Address'])) &&
+	(!isset($_POST['UserAge']) && !isempty($_POST['UserAge'])) &&
+	(!isset($_POST['UserSpecies']) && !isempty($_POST['UserSpecies'])) && 
+	(!isset($_POST['HomePlanet']) && !isempty($_POST['HomePlanet'])) && 
+	(!isset($_POST['HomeStar']) && !isempty($_POST['HomeStar'])) && 
+	(!isset($_POST['Duration']) && !isempty($_POST['Duration'])) && 
+	(!isset($_POST['E_Address']) && !isempty($_POST['E_Address'])) && 
 	(!isset($_POST['Password1']) && !isempty($_POST['Password1'])) &&
 	(!isset($_POST['Password2']) && !isempty($_POST['Password2']))) {
 	echo "You must fill out all fields, go back and try again!";
@@ -19,6 +20,7 @@ if((!isset($_POST['UserName']) && !isempty($_POST['UserName'])) &&
 	$address = $_POST['E_Address'];
 	$pass1 = $_POST['Password1'];
 	$pass2 = $_POST['Password2'];
+
 	
 	if($pass1 != $pass2) {
 		echo "Passwords don't match!";
@@ -28,8 +30,9 @@ if((!isset($_POST['UserName']) && !isempty($_POST['UserName'])) &&
 	            echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	    }
 	    mysql_select_db("web102");
-	
+
 	    $result = mysql_query("INSERT INTO alien (name, age, species, planet, star, duration, address, pass) VALUES ('$name', '$age', '$species', '$planet', '$star', '$duration', '$address', '$pass')");
+
 	    if(!$result) {
 	            echo mysql_error();
 	    } else {
