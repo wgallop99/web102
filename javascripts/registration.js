@@ -87,7 +87,5 @@ $(document).ready(function() {
 		} else {
 			$('#passwordmatchError').hide();
 		}
-		// Don't do anything form submission-wise yet
-		return false;
 	});
 });
