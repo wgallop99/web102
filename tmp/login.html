@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MIB Alien Registration System (ARS) LOGIN</title>	
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
+	<link rel="stylesheet" href="stylesheets/loginstyle_ben.css">
+</head>
+
+<body>
+	<div id="LoginWindow">
+		<img src="images/ars_logo.png" alt="ARS Logo" class="img-responsive"><br><br>
+		<form method="post" action="php/signin.php">
+  			<div class="form-group">
+  				<input name="email" type="text" placeholder="Agent E-Mail" class="form-control" required oninvalid="this.setCustomValidity('Enter Agent E-Mail')" oninput="setCustomValidity('')">
+    			<input name="password" type="password" placeholder="Agent Password" class="form-control" required oninvalid="this.setCustomValidity('Enter Agent Password')" oninput="setCustomValidity('')">
+  				<input type="submit" class="btn btn-default" value="Log In"> 
+  			</div>
+		</form>
+	</div>
+
+	<script src="javascripts/jquery-2.1.1.js"></script>
+	<script src="javascripts/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MIB Alien Registration System(ARS)</title>
+		
+		<link rel="stylesheet" href="stylesheets/bootstrap.css">
+		<link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
+		<link rel="stylesheet" href="stylesheets/registration-style.css">
+	</head>
+	<body>
+		<div class = "row">
+		<div class = "col-md-1 bg-primary" id = "height"></div>
+		<div class ="col-md-10" id= "header">
+		<h1>MIB Alien Registration System <small>(ARS)</small></h1>
+		</div>
+		<div class = "col-md-1 bg-primary" id = "height"></div>
+		</div>
+		
+		
+		<div class = "row">
+		<div class = "col-md-1" id = "height_2"></div>
+		<div class = "col-md-10">
+		<p> Please use Latin Earth Characters. Contact Agent P if you have any 
+		questions or difficulty </p>
+		
+		<form action="php/registration.php" method="post" id="alienRegistration">
+			<div class = "form-group">
+				<label for="UserName"> Name </label>
+				<input name="UserName" type="text" class="form-control" id="UserName" placeholder="Enter your full name" />
+				<span class="errorMessage" id="nameError">Please enter a valid name</span>
+			</div>
+			<div class = "form-group">
+				<label for="age"> Age </label>
+				<input name="UserAge" type="text" class="form-control" id="UserAge" placeholder="Enter your age">
+				<span class="errorMessage" id="ageError">Please enter a valid age (Earth digits only)</span>
+			</div>
+			<div class = "form-group">
+				<label for="UserSpecies"> Species </label>
+				<input name="UserSpecies" type="text" class="form-control" id="UserSpecies" placeholder="Enter your species">
+				<span class="errorMessage" id="speciesError">Please enter a valid species (use only Earth Latin)</span>
+			</div>
+			<div class = "form-group">
+				<label for="HomePlanet"> Home Planet/Satellite </label>
+				<input name="HomePlanet" type="text" class="form-control" id="HomePlanet" placeholder="Where are you from?">
+				<span class="errorMessage" id="planetError">Please enter a valid planet (use only Earth Latin)</span>
+			</div>
+			<div class = "form-group">
+				<label for="HomeStar"> Home System </label>
+				<input name="HomeStar" type="text" class="form-control" id="HomeStar" placeholder="What home system are you from?">
+				<span class="errorMessage" id="starError">Please enter a valid star system (use only Earth Latin)</span>
+			</div>
+			<p> <strong> Expected Duration of Stay </strong> </p>
+			<select class="form-control" id="Duration" name="Duration">
+				<option></option>
+ 				<option>Permanent (Applying for Citizenship)</option>
+ 				<option>Permanent</option>
+ 				<option>More than 1 Earth-Year</option>
+				<option>Less than 1 Earth-Year</option>
+				<option>More than 50 Earth-Rotations</option>
+				<option>Less than 50 Earth-Rotations</option>
+			</select>
+			<span class="errorMessage" id="durationError">Please select a duration</span>
+			<div class = "form-group">
+				<label for="E_Address"> Email Address </label>
+				<input name="E_Address" type="email" class="form-control" id="E_Address" placeholder="Enter your Email Address">
+				<span class="errorMessage" id="eaddressError">Please enter a valid e-mail address</span>
+			</div>
+			<div class = "form-group">
+				<label for="Password1"> Password </label>
+				<input name="Password1" type="password" class="form-control" id="Password1" placeholder="Enter your password">
+				<span class="errorMessage" id='password1emptyError'>Please enter a password</span>
+			</div>
+			<div class = "form-group">
+				<label for="Password2"> Confirm Password </label>
+				<input name="Password2" type="password" class="form-control" id="Password2" placeholder="Re-enter your password">
+				<span class="errorMessage" id='password2emptyError'>Please re-enter password</span>
+			</div>
+			<span class="errorMessage" id='passwordmatchError'>Passwords do not match. Please re-enter both passwords.</span><br>
+			<button name="submit" type="submit" class="btn btn-default" value="submit">Submit</button>
+		</form>
+		</div>
+		<div class = "col-md-1" id = "height_2"></div>
+		</div>
+		
+		<div class = "row">
+		<div class = "col-md-1" id = "height_3"></div>
+		<div class = "col-md-10" id = "height_4"></div>
+		<div class = "col-md-1" id = "height_3"></div>
+		</div>
+		
+		<script src="javascripts/jquery-2.1.1.js"></script>
+		<script src="javascripts/bootstrap.js"></script>
+		
+		<script src="javascripts/registration.js"></script>
+	</body>
+</html>
