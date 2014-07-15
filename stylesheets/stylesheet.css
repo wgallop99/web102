@@ -112,3 +112,17 @@ div.assignment_text { display: none; font-family: Lato; width: 95%; margin: 0 au
 p.assignment_box_details { margin-bottom: 15px; }
 div.active_assignment { display: block; }
 li.active_assignment_link { color: #999 !important; }
+
+strong.assignment_strong { /* Adopted from Josh Soileau's (sp) JS class */
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+  font-family: LatoItalic;
+  display: inline-block;
+  color: #444;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px #fff;
+  margin: 20px 0px;
+  }
+  
+  
