@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	margin: 50px;
+	text-align: center;
+}
+h1 {
+	padding-bottom: 20px;
+}
+
+
+
+.mib-back-them { 
+  background: url(http://www.listofimages.com/wp-content/uploads/2012/04/earth-views-clouds-color-colorful-continents-earth-horizon-hubble-overview-planet-space.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+font-family: 'mib';
+src: local('?'), 
+	   url('fonts/Men In Black.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+div a, .main-font {
+	font-family: 'mib','Frijole', cursive;
+	color: red;
+}
+
+.emergency {
+	padding-top: 3px;
+	margin: 0px;
+	background-color: #000;
+	text-align: center;
+	color: red;
+	border: 1px black solid;
+	
+	
+}
+div.inline {
+	float: left;
+}
+
+.clear-fix {
+	clear: both;
+}
+
+  
+  .mib2-back-theme { 
+  background: url(http://qubehrm.com/blog/wp-content/uploads/2012/07/Contest-banner1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Verdona;
+  }
+}
